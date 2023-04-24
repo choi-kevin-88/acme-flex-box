@@ -4,9 +4,90 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link href='/style.css' rel='stylesheet' />
+  <title>Acme Layout</title>
 </head>
 <body>
+  <header>
+    <a href='#'>Acme Layout</a>
+    <nav>
+      <a href='#' class='Users'>Users</a>
+      <a href='#'>Departments</a>
+      <a href='#'>Contact</a>
+    </nav>
+  </header>
+  <div class="createUser">
+    <h1>Users</h1>
+    <form>
+      <h1>Create A User</h1>
+      <div>
+        <label>First Name</label>
+        <input placeholder="Jane"></input>
+      </div>
+      <div>
+        <label>Last Name</label>
+        <input placeholder="Doe"></input>
+      </div>
+      <div>
+        <label>Department</label>
+        <select>
+          <option value=''>-- None --</option>
+          <option value=''>Administration</option>
+          <option value=''>Human Resources</option>
+          <option value=''>Engineering</option>
+        </select>
+      </div>
+      <div class="buttons">
+        <button class="clear">Clear</button>
+        <button class="save">Save</button>
+      </div>
+    </form>
 
+    <div class="users">
+      <div>
+        <h4>User A</h4>
+        <div>Some text for the user</div>
+      </div>
+      <div>
+        <h4>User A</h4>
+        <div>Some text for the user.
+          Some text for the user.
+          Some text for the user.
+          Some text for the user.
+          Some text for the user.
+          Some text for the user.</div>
+      </div>
+      <div>
+        <h4>User A</h4>
+        <div>Some text for the user</div>
+      </div>
+      <div>
+        <h4>User A</h4>
+        <div>Some text for the user</div>
+      </div>
+      <div>
+        <h4>User A</h4>
+        <div>Some text for the user</div>
+      </div>
+      <div>
+        <h4>User A</h4>
+        <div>Some text for the user</div>
+      </div>
+      <div>
+        <h4>User A</h4>
+        <div>Some text for the user</div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
+
+
+<!-- A form below the Users header. The form is surrounded by a black border
+   with slightly rounded corners. The form is center-aligned. All the text
+   within it is left-aligned. The form contains:
+A header “Create A User”
+A label “First Name” followed by a text form field on the same line
+A label “Last Name” followed by a text form field on the same line
+A label “Department” followed by a dropdown form field on the same line.
+A button labeled “Clear” next to a blue button with white text labeled “Save” -->

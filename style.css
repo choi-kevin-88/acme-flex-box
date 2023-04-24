@@ -1,1 +1,122 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: verdana;
+  margin: 0;
+  color: darkgray;
+}
+
+header {
+  display: flex;
+  padding: 1rem;
+  background-color: dodgerBlue;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header a.Users {
+  font-weight: bold;
+}
+
+header > a {
+  flex: 1;
+  font-size: 2rem;
+}
+
+nav {
+  display: flex;
+  flex: 3;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.createUser {
+  margin: 1rem;
+}
+
+form {
+  padding: 1rem;
+  width: 50%;
+  border: solid 1px black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+form > div {
+  display: flex;
+  margin-bottom: 1rem;;
+}
+
+form > div > label {
+  flex: 1;
+  display: flex;
+}
+
+form > div > input {
+  flex: 2;
+}
+
+form > div > select {
+  flex: 2;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.save {
+  background-color: dodgerBlue;
+  color: white;
+  border-color: black;
+}
+
+.users {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.users > div {
+  border: solid 1px black;
+  border-radius: 1rem;
+  width: calc((100% / 3) - 3rem);
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* flex-grow: 1; */
+}
+
+@media (max-width: 600px){
+
+  header {
+    flex-direction: column;
+  }
+  header nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header nav a {
+    margin-top: 1rem;
+  }
+  .userses > div {
+    width: calc(100% - 2rem);
+  }
+  form {
+    width: 100%;
+  }
+  form > div {
+    flex-direction: column;
+  }
+  form > div > label {
+    margin-bottom: 1.5rem;
+  }
+}
